@@ -1,0 +1,20 @@
+.footer/*BEM para el footer*/{
+    display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 50px;
+  padding-top: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 159, 18),
+    rgb(219, 150, 21)
+  );
+    &__cursiva{
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    &__div{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

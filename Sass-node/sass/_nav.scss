@@ -1,0 +1,20 @@
+$estacion:verano;/*condicional para el color del nav*/
+
+.navi /*BEM para navbar principal*/{
+    font-size: 50px;
+    &__margen{
+        margin-left: 20px;
+    }
+    &__color
+    {
+        @if $estacion == verano {
+            color: red;
+            } 
+        @else if $estacion == invierno {
+            color: blue;
+    }
+    @else {
+        color: black;
+    }
+}
+}

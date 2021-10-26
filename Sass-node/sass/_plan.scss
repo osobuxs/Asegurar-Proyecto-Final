@@ -1,0 +1,32 @@
+
+.plan /*BEM para seccion plan*/ {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 2fr;
+  &__tabla {
+    color: rgb(8, 8, 8);
+    background: linear-gradient(
+      to bottom,
+      rgba(247, 0, 152, 0.671),
+      rgba(7, 97, 133, 0.822)
+    );
+    border: 1px solid rgb(8, 8, 8);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  &__color {
+    color: black;
+    background: linear-gradient(
+      to bottom,
+      rgba(219, 19, 19, 0.993),
+      rgba(250, 250, 250, 0.836)
+    );
+    border: 1px solid rgb(8, 8, 8);
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+}
+
+

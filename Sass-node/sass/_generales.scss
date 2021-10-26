@@ -1,0 +1,40 @@
+$cool-blue: #00478fe7;
+
+.tituloMargenes{
+  color: rgba(247, 244, 244, 0.795);
+  text-align: center;
+  text-shadow: 10px -10px 3px rgba(0, 219, 248, 0.527);
+  line-height: 2em;
+  font-size: 50px;
+  font-family: serif;
+}
+.division{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+    &__margen{
+        margin-left: 20px;
+    }
+    &__separador{
+        margin-top: 50px;
+    }
+    &__titulo{
+        color: rgb(38, 0, 255);
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+@mixin header /*mixin para el titulo*/{
+	background-color: $cool-blue;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+header{
+	@include header;
+	}
+
+
+
+
